@@ -1,0 +1,23 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Proveedor</th>
+        <th scope="col">Año</th>
+        <th scope="col">Activo</th>
+        <th scope="col">Ultima Modificacion</th>
+        <th scope="col">Imagen</th>
+        <th scope="col">Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let proveedor of Proveedor">
+        <th scope="row">{{proveedor.id}}</th>
+        <td>{{proveedor.nombre}}</td>
+        <td>{{proveedor.ano}}</td>
+        <td>{{proveedor.activo}}</td>
+        <td>{{proveedor.modificacion}}</td>
+        <td>{{proveedor.fecha}}</td>
+      </tr>
+    </tbody>
+  </table> 
